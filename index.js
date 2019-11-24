@@ -1,4 +1,7 @@
-import '@babel/polyfill'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-document.getElementById('app').style =
-  'height: 100px; width: 100px; background-color: red;'
+import { App } from './src/app'
+
+// eslint-disable-next-line react/jsx-filename-extension
+ReactDOM.render(<App />, document.getElementById('app'))

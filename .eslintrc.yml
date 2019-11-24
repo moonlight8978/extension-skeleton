@@ -37,6 +37,12 @@ rules:
         - sibling
         - index
       newlines-between: always
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies:
+        - '**/*.test.js'
+        - '**/*.stories.js'
+        - '**/*.config.js'
   react/destructuring-assignment: 'off'
   react/jsx-filename-extension:
     - error
